@@ -7,8 +7,6 @@ var buf = fs.readdir(process.argv[2], function callback(err, list) {
 			var res = list[i].substr(len-(ext.length+1), len);
 			if (res == '.' + process.argv[3])
 				console.log(list[i]);
-		}
-
-		
+		}	
 	}
 })
